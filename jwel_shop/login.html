@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>
+            login form
+        </title>
+        
+        <style>
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    background: url(13466.jpg);
+    background-size: cover;
+}
+.loginin{
+    background: rgba(169, 169, 169, 0.829);
+    padding: 50px;
+    width: 250px;
+    margin: auto;
+    margin-top: 80px;
+    height: 400px;
+    margin-left: 500px;
+    box-shadow: 2px 2px 10px crimson;
+    opacity: 0.8;
+}
+
+form{
+    width: 240px;
+    text-align: center;
+
+}
+   
+input
+{
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom:1px solid #fff;
+    font-family: 'play',sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline:none;
+    color:#fff;
+}
+button
+{
+    border: none;
+    width: 190px;
+    background: white;
+    color:#000;
+    font-size: 16px;
+    line-height: 25px;
+    padding:10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button:hover
+{
+    
+    background-color: black;
+    color:#fff;
+    
+}
+h2{
+    color:white;
+
+}
+
+a{
+    color:crimson;
+    text-decoration:blink;
+
+}
+
+a:hover
+{
+    color:black;
+}
+
+.container
+{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+
+}
+::placeholder{
+    color:aliceblue;
+    opacity: 0.9;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="loginin">
+            <form  onsubmit="myfunc()" >
+                <h2 style="color:white">Log In</h2>
+                <br>
+                
+                <input type="text" id="user" name="user" placeholder="username">
+                <span id="demo"></span>
+                <br>
+                <br>
+                <input type="password" id="pass" name="password" placeholder="password"><br><br>
+                <span id="demo1"></span>
+                <br>
+                <br>
+                <button type="submit" value="Login" >Login</button><br>
+                <br>
+                <br><br><br><br><br>
+                
+            </form>
+
+            <script>
+
+                function myfunc(){
+                    let u1=document.getElementById("user").value;
+                    let p1=document.getElementById("pass").value;
+
+                   if(u1=="Admin" || p1=="Admin@123"){
+                    alert("Successfully login");
+                    window.open("home2.html");
+                   }
+                }
+                 
+            </script>
+
+        </div>
+    </body>
+</html>
